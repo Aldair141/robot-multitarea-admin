@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminBuhito", "AdminBuhito\AdminBuhito.csproj", "{90F9D16B-1860-4E18-99E6-B6B57BF897EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIBENTIDAD", "LIBENTIDAD\LIBENTIDAD.csproj", "{D2E7D874-A2D6-42A3-810D-7FFF85B55287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90F9D16B-1860-4E18-99E6-B6B57BF897EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F9D16B-1860-4E18-99E6-B6B57BF897EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F9D16B-1860-4E18-99E6-B6B57BF897EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F9D16B-1860-4E18-99E6-B6B57BF897EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2E7D874-A2D6-42A3-810D-7FFF85B55287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E7D874-A2D6-42A3-810D-7FFF85B55287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E7D874-A2D6-42A3-810D-7FFF85B55287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E7D874-A2D6-42A3-810D-7FFF85B55287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89E592AF-A932-4B00-B511-97E07FBF4A15}
+	EndGlobalSection
+EndGlobal

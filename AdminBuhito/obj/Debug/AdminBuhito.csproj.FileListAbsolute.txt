@@ -1,0 +1,13 @@
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\bin\Debug\AdminBuhito.exe.config
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\bin\Debug\AdminBuhito.exe
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\bin\Debug\AdminBuhito.pdb
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\bin\Debug\LIBENTIDAD.dll
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\bin\Debug\LIBENTIDAD.pdb
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.csprojAssemblyReference.cache
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.Form1.resources
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.Properties.Resources.resources
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.csproj.GenerateResource.cache
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.csproj.CoreCompileInputs.cache
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.csproj.CopyComplete
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.exe
+C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.pdb
