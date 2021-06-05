@@ -1,0 +1,6 @@
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\bin\Debug\LIBENTIDAD.dll
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\bin\Debug\LIBENTIDAD.pdb
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.csprojAssemblyReference.cache
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.csproj.CoreCompileInputs.cache
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.dll
+C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.pdb
