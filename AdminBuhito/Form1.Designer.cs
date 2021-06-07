@@ -29,11 +29,20 @@ namespace AdminBuhito
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupTipoProceso = new System.Windows.Forms.GroupBox();
+            this.rbtNMinutos = new System.Windows.Forms.RadioButton();
+            this.rbtNDias = new System.Windows.Forms.RadioButton();
+            this.rbtFechaEspecifico = new System.Windows.Forms.RadioButton();
+            this.rbtDiasSemana = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupPropiedades = new System.Windows.Forms.GroupBox();
+            this.txtMinutos = new System.Windows.Forms.TextBox();
+            this.lblMinutos = new System.Windows.Forms.Label();
+            this.lblDias = new System.Windows.Forms.Label();
+            this.txtDias = new System.Windows.Forms.TextBox();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
+            this.lblfecha = new System.Windows.Forms.Label();
             this.chkTodosLosDias = new System.Windows.Forms.CheckBox();
             this.dtpHora = new System.Windows.Forms.DateTimePicker();
             this.lblhora = new System.Windows.Forms.Label();
@@ -44,33 +53,27 @@ namespace AdminBuhito
             this.chkMiercoles = new System.Windows.Forms.CheckBox();
             this.chkMartes = new System.Windows.Forms.CheckBox();
             this.chkLunes = new System.Windows.Forms.CheckBox();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.lblfecha = new System.Windows.Forms.Label();
-            this.txtDias = new System.Windows.Forms.TextBox();
-            this.lblDias = new System.Windows.Forms.Label();
             this.groupGenerales = new System.Windows.Forms.GroupBox();
-            this.lblNomProceso = new System.Windows.Forms.Label();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.rbtDiasSemana = new System.Windows.Forms.RadioButton();
-            this.rbtFechaEspecifico = new System.Windows.Forms.RadioButton();
-            this.rbtNDias = new System.Windows.Forms.RadioButton();
-            this.rbtNMinutos = new System.Windows.Forms.RadioButton();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.lblNomProceso = new System.Windows.Forms.Label();
             this.tsOpciones = new System.Windows.Forms.ToolStrip();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblStatusEncendido = new System.Windows.Forms.ToolStripStatusLabel();
             this.sbNuevo = new System.Windows.Forms.ToolStripButton();
             this.sbEditar = new System.Windows.Forms.ToolStripButton();
             this.sbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.sbCancelar = new System.Windows.Forms.ToolStripButton();
             this.sbGuardar = new System.Windows.Forms.ToolStripButton();
-            this.lblMinutos = new System.Windows.Forms.Label();
-            this.txtMinutos = new System.Windows.Forms.TextBox();
+            this.sbCancelar = new System.Windows.Forms.ToolStripButton();
             this.groupTipoProceso.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupPropiedades.SuspendLayout();
             this.groupGenerales.SuspendLayout();
             this.tsOpciones.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupTipoProceso
@@ -84,6 +87,54 @@ namespace AdminBuhito
             this.groupTipoProceso.Size = new System.Drawing.Size(175, 158);
             this.groupTipoProceso.TabIndex = 0;
             this.groupTipoProceso.TabStop = false;
+            // 
+            // rbtNMinutos
+            // 
+            this.rbtNMinutos.AutoSize = true;
+            this.rbtNMinutos.Location = new System.Drawing.Point(28, 105);
+            this.rbtNMinutos.Name = "rbtNMinutos";
+            this.rbtNMinutos.Size = new System.Drawing.Size(108, 17);
+            this.rbtNMinutos.TabIndex = 3;
+            this.rbtNMinutos.TabStop = true;
+            this.rbtNMinutos.Text = "Cada \"n\" minutos";
+            this.rbtNMinutos.UseVisualStyleBackColor = true;
+            this.rbtNMinutos.CheckedChanged += new System.EventHandler(this.rbtNMinutos_CheckedChanged);
+            // 
+            // rbtNDias
+            // 
+            this.rbtNDias.AutoSize = true;
+            this.rbtNDias.Location = new System.Drawing.Point(28, 82);
+            this.rbtNDias.Name = "rbtNDias";
+            this.rbtNDias.Size = new System.Drawing.Size(93, 17);
+            this.rbtNDias.TabIndex = 2;
+            this.rbtNDias.TabStop = true;
+            this.rbtNDias.Text = "Cada \"n\" días";
+            this.rbtNDias.UseVisualStyleBackColor = true;
+            this.rbtNDias.CheckedChanged += new System.EventHandler(this.rbtNDias_CheckedChanged);
+            // 
+            // rbtFechaEspecifico
+            // 
+            this.rbtFechaEspecifico.AutoSize = true;
+            this.rbtFechaEspecifico.Location = new System.Drawing.Point(28, 59);
+            this.rbtFechaEspecifico.Name = "rbtFechaEspecifico";
+            this.rbtFechaEspecifico.Size = new System.Drawing.Size(124, 17);
+            this.rbtFechaEspecifico.TabIndex = 1;
+            this.rbtFechaEspecifico.TabStop = true;
+            this.rbtFechaEspecifico.Text = "Fecha en Específico";
+            this.rbtFechaEspecifico.UseVisualStyleBackColor = true;
+            this.rbtFechaEspecifico.CheckedChanged += new System.EventHandler(this.rbtFechaEspecifico_CheckedChanged);
+            // 
+            // rbtDiasSemana
+            // 
+            this.rbtDiasSemana.AutoSize = true;
+            this.rbtDiasSemana.Location = new System.Drawing.Point(28, 36);
+            this.rbtDiasSemana.Name = "rbtDiasSemana";
+            this.rbtDiasSemana.Size = new System.Drawing.Size(105, 17);
+            this.rbtDiasSemana.TabIndex = 0;
+            this.rbtDiasSemana.TabStop = true;
+            this.rbtDiasSemana.Text = "Días de Semana";
+            this.rbtDiasSemana.UseVisualStyleBackColor = true;
+            this.rbtDiasSemana.CheckedChanged += new System.EventHandler(this.rbtDiasSemana_CheckedChanged);
             // 
             // groupBox2
             // 
@@ -129,6 +180,69 @@ namespace AdminBuhito
             this.groupPropiedades.Size = new System.Drawing.Size(590, 91);
             this.groupPropiedades.TabIndex = 4;
             this.groupPropiedades.TabStop = false;
+            // 
+            // txtMinutos
+            // 
+            this.txtMinutos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMinutos.Location = new System.Drawing.Point(116, 22);
+            this.txtMinutos.Name = "txtMinutos";
+            this.txtMinutos.Size = new System.Drawing.Size(116, 20);
+            this.txtMinutos.TabIndex = 15;
+            this.txtMinutos.Tag = "NUM_MINUTOS";
+            this.txtMinutos.Visible = false;
+            // 
+            // lblMinutos
+            // 
+            this.lblMinutos.AutoSize = true;
+            this.lblMinutos.Location = new System.Drawing.Point(19, 25);
+            this.lblMinutos.Name = "lblMinutos";
+            this.lblMinutos.Size = new System.Drawing.Size(92, 13);
+            this.lblMinutos.TabIndex = 14;
+            this.lblMinutos.Tag = "NUM_MINUTOS";
+            this.lblMinutos.Text = "Cantidad Minutos:";
+            this.lblMinutos.Visible = false;
+            // 
+            // lblDias
+            // 
+            this.lblDias.AutoSize = true;
+            this.lblDias.Location = new System.Drawing.Point(19, 24);
+            this.lblDias.Name = "lblDias";
+            this.lblDias.Size = new System.Drawing.Size(93, 13);
+            this.lblDias.TabIndex = 13;
+            this.lblDias.Tag = "NUM_DIAS";
+            this.lblDias.Text = "Cantidad de Días:";
+            this.lblDias.Visible = false;
+            // 
+            // txtDias
+            // 
+            this.txtDias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDias.Location = new System.Drawing.Point(116, 21);
+            this.txtDias.Name = "txtDias";
+            this.txtDias.Size = new System.Drawing.Size(116, 20);
+            this.txtDias.TabIndex = 12;
+            this.txtDias.Tag = "NUM_DIAS";
+            this.txtDias.Visible = false;
+            // 
+            // dtpFecha
+            // 
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(116, 21);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(116, 20);
+            this.dtpFecha.TabIndex = 11;
+            this.dtpFecha.Tag = "FECHA_ESPECIFICA";
+            this.dtpFecha.Visible = false;
+            // 
+            // lblfecha
+            // 
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.Location = new System.Drawing.Point(77, 24);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(40, 13);
+            this.lblfecha.TabIndex = 10;
+            this.lblfecha.Tag = "FECHA_ESPECIFICA";
+            this.lblfecha.Text = "Fecha:";
+            this.lblfecha.Visible = false;
             // 
             // chkTodosLosDias
             // 
@@ -239,48 +353,6 @@ namespace AdminBuhito
             this.chkLunes.Text = "Lunes";
             this.chkLunes.UseVisualStyleBackColor = true;
             // 
-            // dtpFecha
-            // 
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(116, 21);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(116, 20);
-            this.dtpFecha.TabIndex = 11;
-            this.dtpFecha.Tag = "FECHA_ESPECIFICA";
-            this.dtpFecha.Visible = false;
-            // 
-            // lblfecha
-            // 
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.Location = new System.Drawing.Point(77, 24);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(40, 13);
-            this.lblfecha.TabIndex = 10;
-            this.lblfecha.Tag = "FECHA_ESPECIFICA";
-            this.lblfecha.Text = "Fecha:";
-            this.lblfecha.Visible = false;
-            // 
-            // txtDias
-            // 
-            this.txtDias.Location = new System.Drawing.Point(116, 21);
-            this.txtDias.Name = "txtDias";
-            this.txtDias.Size = new System.Drawing.Size(116, 20);
-            this.txtDias.TabIndex = 12;
-            this.txtDias.Tag = "NUM_DIAS";
-            this.txtDias.Visible = false;
-            this.txtDias.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            // 
-            // lblDias
-            // 
-            this.lblDias.AutoSize = true;
-            this.lblDias.Location = new System.Drawing.Point(19, 24);
-            this.lblDias.Name = "lblDias";
-            this.lblDias.Size = new System.Drawing.Size(93, 13);
-            this.lblDias.TabIndex = 13;
-            this.lblDias.Tag = "NUM_DIAS";
-            this.lblDias.Text = "Cantidad de Días:";
-            this.lblDias.Visible = false;
-            // 
             // groupGenerales
             // 
             this.groupGenerales.Controls.Add(this.txtDescripcion);
@@ -293,23 +365,13 @@ namespace AdminBuhito
             this.groupGenerales.TabIndex = 5;
             this.groupGenerales.TabStop = false;
             // 
-            // lblNomProceso
+            // txtDescripcion
             // 
-            this.lblNomProceso.AutoSize = true;
-            this.lblNomProceso.Location = new System.Drawing.Point(20, 16);
-            this.lblNomProceso.Name = "lblNomProceso";
-            this.lblNomProceso.Size = new System.Drawing.Size(89, 13);
-            this.lblNomProceso.TabIndex = 16;
-            this.lblNomProceso.Tag = "";
-            this.lblNomProceso.Text = "Nombre Proceso:";
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Location = new System.Drawing.Point(115, 13);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(168, 20);
-            this.txtNombre.TabIndex = 17;
+            this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDescripcion.Location = new System.Drawing.Point(116, 39);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(453, 20);
+            this.txtDescripcion.TabIndex = 19;
             // 
             // lblDescripcion
             // 
@@ -321,61 +383,23 @@ namespace AdminBuhito
             this.lblDescripcion.Tag = "";
             this.lblDescripcion.Text = "Descripción:";
             // 
-            // txtDescripcion
+            // txtNombre
             // 
-            this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDescripcion.Location = new System.Drawing.Point(116, 39);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(453, 20);
-            this.txtDescripcion.TabIndex = 19;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNombre.Location = new System.Drawing.Point(115, 13);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(168, 20);
+            this.txtNombre.TabIndex = 17;
             // 
-            // rbtDiasSemana
+            // lblNomProceso
             // 
-            this.rbtDiasSemana.AutoSize = true;
-            this.rbtDiasSemana.Location = new System.Drawing.Point(28, 36);
-            this.rbtDiasSemana.Name = "rbtDiasSemana";
-            this.rbtDiasSemana.Size = new System.Drawing.Size(105, 17);
-            this.rbtDiasSemana.TabIndex = 0;
-            this.rbtDiasSemana.TabStop = true;
-            this.rbtDiasSemana.Text = "Días de Semana";
-            this.rbtDiasSemana.UseVisualStyleBackColor = true;
-            this.rbtDiasSemana.CheckedChanged += new System.EventHandler(this.rbtDiasSemana_CheckedChanged);
-            // 
-            // rbtFechaEspecifico
-            // 
-            this.rbtFechaEspecifico.AutoSize = true;
-            this.rbtFechaEspecifico.Location = new System.Drawing.Point(28, 59);
-            this.rbtFechaEspecifico.Name = "rbtFechaEspecifico";
-            this.rbtFechaEspecifico.Size = new System.Drawing.Size(124, 17);
-            this.rbtFechaEspecifico.TabIndex = 1;
-            this.rbtFechaEspecifico.TabStop = true;
-            this.rbtFechaEspecifico.Text = "Fecha en Específico";
-            this.rbtFechaEspecifico.UseVisualStyleBackColor = true;
-            this.rbtFechaEspecifico.CheckedChanged += new System.EventHandler(this.rbtFechaEspecifico_CheckedChanged);
-            // 
-            // rbtNDias
-            // 
-            this.rbtNDias.AutoSize = true;
-            this.rbtNDias.Location = new System.Drawing.Point(28, 82);
-            this.rbtNDias.Name = "rbtNDias";
-            this.rbtNDias.Size = new System.Drawing.Size(93, 17);
-            this.rbtNDias.TabIndex = 2;
-            this.rbtNDias.TabStop = true;
-            this.rbtNDias.Text = "Cada \"n\" días";
-            this.rbtNDias.UseVisualStyleBackColor = true;
-            this.rbtNDias.CheckedChanged += new System.EventHandler(this.rbtNDias_CheckedChanged);
-            // 
-            // rbtNMinutos
-            // 
-            this.rbtNMinutos.AutoSize = true;
-            this.rbtNMinutos.Location = new System.Drawing.Point(28, 105);
-            this.rbtNMinutos.Name = "rbtNMinutos";
-            this.rbtNMinutos.Size = new System.Drawing.Size(108, 17);
-            this.rbtNMinutos.TabIndex = 3;
-            this.rbtNMinutos.TabStop = true;
-            this.rbtNMinutos.Text = "Cada \"n\" minutos";
-            this.rbtNMinutos.UseVisualStyleBackColor = true;
-            this.rbtNMinutos.CheckedChanged += new System.EventHandler(this.rbtNMinutos_CheckedChanged);
+            this.lblNomProceso.AutoSize = true;
+            this.lblNomProceso.Location = new System.Drawing.Point(20, 16);
+            this.lblNomProceso.Name = "lblNomProceso";
+            this.lblNomProceso.Size = new System.Drawing.Size(89, 13);
+            this.lblNomProceso.TabIndex = 16;
+            this.lblNomProceso.Tag = "";
+            this.lblNomProceso.Text = "Nombre Proceso:";
             // 
             // tsOpciones
             // 
@@ -391,10 +415,35 @@ namespace AdminBuhito
             this.tsOpciones.TabIndex = 6;
             this.tsOpciones.Text = "toolStrip1";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.lblStatusEncendido});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 542);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(795, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(99, 17);
+            this.toolStripStatusLabel1.Text = "Estado del Robot:";
+            // 
+            // lblStatusEncendido
+            // 
+            this.lblStatusEncendido.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatusEncendido.ForeColor = System.Drawing.Color.DarkGreen;
+            this.lblStatusEncendido.Name = "lblStatusEncendido";
+            this.lblStatusEncendido.Size = new System.Drawing.Size(64, 17);
+            this.lblStatusEncendido.Text = "Encendido";
+            // 
             // sbNuevo
             // 
             this.sbNuevo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.sbNuevo.Image = ((System.Drawing.Image)(resources.GetObject("sbNuevo.Image")));
+            this.sbNuevo.Image = global::AdminBuhito.Properties.Resources._new;
             this.sbNuevo.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sbNuevo.Name = "sbNuevo";
             this.sbNuevo.Size = new System.Drawing.Size(23, 22);
@@ -405,7 +454,7 @@ namespace AdminBuhito
             // 
             this.sbEditar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.sbEditar.Enabled = false;
-            this.sbEditar.Image = ((System.Drawing.Image)(resources.GetObject("sbEditar.Image")));
+            this.sbEditar.Image = global::AdminBuhito.Properties.Resources.edit;
             this.sbEditar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sbEditar.Name = "sbEditar";
             this.sbEditar.Size = new System.Drawing.Size(23, 22);
@@ -415,65 +464,46 @@ namespace AdminBuhito
             // 
             this.sbEliminar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.sbEliminar.Enabled = false;
-            this.sbEliminar.Image = ((System.Drawing.Image)(resources.GetObject("sbEliminar.Image")));
+            this.sbEliminar.Image = global::AdminBuhito.Properties.Resources.delete;
             this.sbEliminar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sbEliminar.Name = "sbEliminar";
             this.sbEliminar.Size = new System.Drawing.Size(23, 22);
             this.sbEliminar.Text = "Eliminar";
             // 
-            // sbCancelar
-            // 
-            this.sbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.sbCancelar.Enabled = false;
-            this.sbCancelar.Image = ((System.Drawing.Image)(resources.GetObject("sbCancelar.Image")));
-            this.sbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.sbCancelar.Name = "sbCancelar";
-            this.sbCancelar.Size = new System.Drawing.Size(23, 22);
-            this.sbCancelar.Text = "Cancelar";
-            this.sbCancelar.Click += new System.EventHandler(this.sbCancelar_Click);
-            // 
             // sbGuardar
             // 
             this.sbGuardar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.sbGuardar.Enabled = false;
-            this.sbGuardar.Image = ((System.Drawing.Image)(resources.GetObject("sbGuardar.Image")));
+            this.sbGuardar.Image = global::AdminBuhito.Properties.Resources.save;
             this.sbGuardar.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.sbGuardar.Name = "sbGuardar";
             this.sbGuardar.Size = new System.Drawing.Size(23, 22);
             this.sbGuardar.Text = "Guardar";
             this.sbGuardar.Click += new System.EventHandler(this.sbGuardar_Click);
             // 
-            // lblMinutos
+            // sbCancelar
             // 
-            this.lblMinutos.AutoSize = true;
-            this.lblMinutos.Location = new System.Drawing.Point(19, 25);
-            this.lblMinutos.Name = "lblMinutos";
-            this.lblMinutos.Size = new System.Drawing.Size(92, 13);
-            this.lblMinutos.TabIndex = 14;
-            this.lblMinutos.Tag = "NUM_MINUTOS";
-            this.lblMinutos.Text = "Cantidad Minutos:";
-            this.lblMinutos.Visible = false;
-            // 
-            // txtMinutos
-            // 
-            this.txtMinutos.Location = new System.Drawing.Point(116, 22);
-            this.txtMinutos.Name = "txtMinutos";
-            this.txtMinutos.Size = new System.Drawing.Size(116, 20);
-            this.txtMinutos.TabIndex = 15;
-            this.txtMinutos.Tag = "NUM_MINUTOS";
-            this.txtMinutos.Visible = false;
-            this.txtMinutos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sbCancelar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.sbCancelar.Enabled = false;
+            this.sbCancelar.Image = global::AdminBuhito.Properties.Resources.cancel;
+            this.sbCancelar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.sbCancelar.Name = "sbCancelar";
+            this.sbCancelar.Size = new System.Drawing.Size(23, 22);
+            this.sbCancelar.Text = "Cancelar";
+            this.sbCancelar.Click += new System.EventHandler(this.sbCancelar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(795, 540);
+            this.ClientSize = new System.Drawing.Size(795, 564);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tsOpciones);
             this.Controls.Add(this.groupGenerales);
             this.Controls.Add(this.groupPropiedades);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupTipoProceso);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador de Procesos";
@@ -487,6 +517,8 @@ namespace AdminBuhito
             this.groupGenerales.PerformLayout();
             this.tsOpciones.ResumeLayout(false);
             this.tsOpciones.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,6 +561,9 @@ namespace AdminBuhito
         private System.Windows.Forms.ToolStripButton sbGuardar;
         private System.Windows.Forms.TextBox txtMinutos;
         private System.Windows.Forms.Label lblMinutos;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel lblStatusEncendido;
     }
 }
 

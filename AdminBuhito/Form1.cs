@@ -101,6 +101,7 @@ namespace AdminBuhito
         {
             objEntidad = new Tb_ProcesosBE();
             tipoProceso = TipoProceso.DIAS_SEMANA;
+            dtpHora.Value = Convert.ToDateTime("00:00:00");
 
             sbNuevo.Enabled = true;
             sbEditar.Enabled = false;
@@ -117,9 +118,13 @@ namespace AdminBuhito
 
         private void sbGuardar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea guardar los cambios?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (ValidarGuardar())
             {
-                CrearValoresPorDefecto();
+                if (MessageBox.Show("¿Desea guardar los cambios?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Guardar();
+                    CrearValoresPorDefecto();
+                }
             }
         }
 
@@ -146,6 +151,17 @@ namespace AdminBuhito
 
             chkDomingo.Checked = valueCheck;
             chkDomingo.Enabled = !valueCheck;
+        }
+
+        private bool ValidarGuardar()
+        {
+            return true;
+        }
+
+        private void Guardar()
+        {
+            //Llenamos el objeto de acorde a la opción
+
         }
     }
 }

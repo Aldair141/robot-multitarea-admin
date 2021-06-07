@@ -4,3 +4,8 @@ C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.c
 C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.csproj.CoreCompileInputs.cache
 C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.dll
 C:\Users\programador2\source\repos\AdminBuhito\LIBENTIDAD\obj\Debug\LIBENTIDAD.pdb
+E:\Sistemas\.NET\robot-multitarea-admin\LIBENTIDAD\bin\Debug\LIBENTIDAD.dll
+E:\Sistemas\.NET\robot-multitarea-admin\LIBENTIDAD\bin\Debug\LIBENTIDAD.pdb
+E:\Sistemas\.NET\robot-multitarea-admin\LIBENTIDAD\obj\Debug\LIBENTIDAD.csproj.CoreCompileInputs.cache
+E:\Sistemas\.NET\robot-multitarea-admin\LIBENTIDAD\obj\Debug\LIBENTIDAD.dll
+E:\Sistemas\.NET\robot-multitarea-admin\LIBENTIDAD\obj\Debug\LIBENTIDAD.pdb

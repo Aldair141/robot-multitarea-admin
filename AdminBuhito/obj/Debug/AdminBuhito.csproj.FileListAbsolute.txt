@@ -11,3 +11,16 @@ C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito
 C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.csproj.CopyComplete
 C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.exe
 C:\Users\programador2\source\repos\AdminBuhito\AdminBuhito\obj\Debug\AdminBuhito.pdb
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\bin\Debug\AdminBuhito.exe.config
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\bin\Debug\AdminBuhito.exe
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\bin\Debug\AdminBuhito.pdb
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\bin\Debug\LIBENTIDAD.dll
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\bin\Debug\LIBENTIDAD.pdb
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.csprojAssemblyReference.cache
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.Form1.resources
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.Properties.Resources.resources
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.csproj.GenerateResource.cache
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.csproj.CoreCompileInputs.cache
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.csproj.CopyComplete
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.exe
+E:\Sistemas\.NET\robot-multitarea-admin\AdminBuhito\obj\Debug\AdminBuhito.pdb
